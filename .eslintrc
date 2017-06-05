@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "airbnb-base"
+  ],
+  "plugins": ["node", "jest"],
+  "env": {
+    "node": true,
+    "jest": true,
+    "es6": true,
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["off", 4, {"SwitchCase": 1, "VariableDeclarator": 1}],
+    "strict": ["error", "global"],
+    "semi": ["error", "always"],
+    "new-cap": ["error", {"capIsNew": false}],
+    "prefer-rest-params": ["off"],
+    "no-underscore-dangle": ["off"],
+    "node/no-unsupported-features": ["error", {"version": 6}],
+    "no-console": ["error", { "allow": ["info", "warn", "error"]  }],
+    "max-len": ["off"],
+    "comma-dangle": ["error", "only-multiline"],
+    "quotes": ["error", "double"],
+    "no-bitwise": ["off"],
+    "no-mixed-operators": ["off"],
+    "class-methods-use-this": ["off"],
+    "no-restricted-properties": ["off"]
+  },
+  "globals": {
+    "test": false,
+  }
+}
